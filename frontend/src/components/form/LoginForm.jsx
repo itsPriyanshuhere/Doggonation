@@ -57,14 +57,15 @@ const LoginForm = () => {
   };
   return (
     <form class="form_container">
-      <div class="logo_container">
+      {/* <div class="logo_container">
         <img src={logo} alt="" />
-      </div>
+      </div> */}
       <div class="title_container">
-        <p class="title">Login to your Account</p>
+        <p className="title body-font font-Gruppo font-extrabold pb-1 mt-2">Doggonation</p>
         <span class="subtitle">
-          Get started with our app, just create an account and enjoy the
-          experience.
+          {/* Get started with our app, just create an account and enjoy the
+          experience. */}
+          Welcome back! Please login to your account.
         </span>
       </div>
       <br />
@@ -99,7 +100,7 @@ const LoginForm = () => {
           title="Enter your email"
           name="email"
           type="text"
-          class="input_field"
+          class="input_field bg-white"
           id="email_field"
           onChange={HandleChange}
         />
@@ -139,7 +140,7 @@ const LoginForm = () => {
           title="Inpit title"
           name="password"
           type="password"
-          class="input_field"
+          class="input_field bg-white"
           id="password_field"
           onChange={HandleChange}
         />

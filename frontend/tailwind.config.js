@@ -100,6 +100,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["CustomFont", "Helvetica", "Arial", "sans-serif"],
+        Gruppo: ["Gruppo", "cursive"],
       },
       keyframes: {
         bounce: {
