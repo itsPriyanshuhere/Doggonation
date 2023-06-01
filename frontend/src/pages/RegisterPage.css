@@ -195,3 +195,7 @@
     opacity: 1;
   }
 }
+
+.signinbackgroundimg{
+  background-image: url('/src/images/img6.jpg');
+}

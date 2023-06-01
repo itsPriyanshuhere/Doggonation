@@ -56,12 +56,12 @@ const LoginForm = () => {
     }
   };
   return (
-    <form class="form_container">
+    <form class="form_container mt-0 pt-0">
       {/* <div class="logo_container">
         <img src={logo} alt="" />
       </div> */}
       <div class="title_container">
-        <p className="title body-font font-Gruppo font-extrabold pb-1 mt-2">Doggonation</p>
+        <p className="title body-font font-Gruppo font-extrabold pb-1 ">Doggonation</p>
         <span class="subtitle">
           {/* Get started with our app, just create an account and enjoy the
           experience. */}
@@ -69,7 +69,7 @@ const LoginForm = () => {
         </span>
       </div>
       <br />
-      <div class="input_container">
+      <div class="input_container mt-1">
         <label class="input_label" for="email_field">
           Email
         </label>
@@ -186,9 +186,10 @@ const LoginForm = () => {
 
       <div class="separator">
         <hr class="line" />
-        <span>Or</span>
+        <span>or</span>
         <hr class="line" />
       </div>
+      <div className="flex flex-row">
       <button className="buttonforgoogle" onClick={HandleGoogle}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -212,7 +213,8 @@ const LoginForm = () => {
             d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"
           ></path>
         </svg>
-        Continue with Google
+        {/* Continue with Google */}
+        Sign in with Google
       </button>
       <div id="recaptcha-container" />
       <button className="twittersignin" onClick={Facebook}>
@@ -226,7 +228,8 @@ const LoginForm = () => {
           </svg>
         </span>
       </button>
-      <p>Don't have an account? Sign up <a href="/signup">Here</a></p>
+      </div>
+      <p>New to Doggonation?<a href="/signup">Create Account</a></p>
       <p class="note">Terms of use &amp; Conditions</p>
     </form>
   );

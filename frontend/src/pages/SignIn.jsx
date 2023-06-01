@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react'
 import LoginForm from '../components/form/LoginForm'
+import './RegisterPage.css'
 
 const SignIn = (props) => {
   useEffect(() => {
@@ -12,7 +13,7 @@ const SignIn = (props) => {
       <div className='bg-white'>  
         <LoginForm/>
       </div>
-      <div className=' w-half min-h-screen  bg-doggo-background bg-no-repeat bg-cover '></div>
+      <div className=' w-half min-h-screen signinbackgroundimg  bg-no-repeat bg-cover '></div>
     </div>
     <div>
 
@@ -22,3 +23,4 @@ const SignIn = (props) => {
 }
 
 export default SignIn
+//bg-doggo-background
